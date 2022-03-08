@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+   
+}
+body{
+    background-color: #333d46 ;
+}
+/*  orange ---- #ff9e1b */ 
+/*  blue   ---- #00b2e2 */
+/*  pink   ---- #ff5959 */
+/*  bg     ---- #333d46 */
+
+.container_title{
+    text-align: center
+}
+.container_title h1{
+    color:#ff5959;
+}
+.container_title h5{
+    color: whitesmoke;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+.containerWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.icon_size{
+    font-size: 25px;
+}
+.box h3{
+    font-weight: bold;
+}
+.box{
+    padding: 25px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.first .box:first-child{
+    background-color:#ff9e1b ;
+}
+.first .box:nth-child(2){
+    background-color:#00b2e2 ;
+}
+.length_content{
+    padding: 25px;
+}
+.second{
+    background-color: #ff5959;
+}
+.length_content_wrapper{
+    display: flex;
+}
+.length_content_title{
+    flex: 1;
+    text-align: right;
+}
+.length_content_title h3{
+    padding: 25px;
+}
+.length_content_reasons{
+    flex: 1;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.length_content_reasons_icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 25px; */
+}
+.title_h1{
+    display: flex;
+    font-weight: 700;
+    gap: 20px;
+    align-items: center;
+}
+.title_h1 .icon_size{
+    font-size: 50px;
+}
+.third{
+    background-color: #00b2e2;
+}
+.third_content_desc{
+    display: flex;
+}
+.third_content_desc .box{
+    justify-content: start;
+}
+.fourth .box:first-child{
+    background-color:#ff5959 ;
+}
+.fourth .box:nth-child(2){
+    background-color:#ff9e1b ;
+}
+.fifth{
+    background-color: #00b2e2;
+}
+.common{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.common h1{
+    font-weight: bold;
+}
+.sixth{
+    background-color:#ff9e1b ;
+}
+.seventh .box:first-child{
+    background-color: #00b2e2;
+}
+.seventh .box:nth-child(2){
+    background-color:#ff5959 ;
+}
+
+
+    /* media queries responsive */
+    @media only screen and (max-width: 768px) {
+       .content{
+           flex-direction: column;
+       }
+       .length_content{
+           padding: 0;
+       }
+       .title_h1{
+           justify-content: center;
+           padding-top: 5px;
+       }
+       .title_h1 .icon_size{
+       display: none;
+    }
+       .length_content_wrapper{
+           flex-direction: column;
+       }
+       .length_content_title{
+           text-align: center;
+       }
+       .length_content_reasons{
+           margin-bottom: 10px;
+       }
+       .length_content_desc{
+           text-align: center;
+       }
+       .box{
+           padding-top: 0;
+       }
+       .third_content_desc{
+           flex-direction: column;
+       }
+       .first .box{
+           padding-top: 10px;
+           padding-bottom: 0;
+       
+        }
+        .seventh .box{
+            padding-top: 10px;
+            padding-bottom: 0;
+         }
+         .fourth .box{
+             padding-top: 10px;padding-bottom: 10px;
+         }
+        .sixthWrapper {
+            text-align: center;
+        }
+      }
